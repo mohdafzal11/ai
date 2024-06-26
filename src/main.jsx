@@ -15,17 +15,17 @@ const routes = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/",
-        element: <Home />,
-      },
-      {
         path: "/dashboard",
         element: <Dashboard />,
       },
     ],
   },
   {
-    path: "auth/sign-in",
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/auth/sign-in",
     element: <SignInPage />,
   },
 ]);
