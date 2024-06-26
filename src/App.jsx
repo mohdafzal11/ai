@@ -1,13 +1,7 @@
-import { Button } from "./components/ui/button"
+import { Outlet } from "react-router-dom";
 
 function App() {
-
-  return (
-   <div className="bg-black text-white">
-    Hello ai
-    <Button>Hello</Button>
-   </div>
-  )
+  return <div className="bg-black text-white"><Outlet/></div>;
 }
 
-export default App
+export default App;
