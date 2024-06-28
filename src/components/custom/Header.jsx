@@ -9,7 +9,7 @@ const Header = () => {
   console.log(isSignedIn);
 
   return (
-    <div className=" px-5 py-3 flex justify-between shadow-md border-2">
+    <div className="bg-[#5169F6] px-5 py-3 flex justify-between shadow-md ">
       <div><img src="" alt="logo" /></div>
       <div>
         {isSignedIn ? (
@@ -22,7 +22,7 @@ const Header = () => {
           </div>
         ) : (
           <Link to={"/auth/sign-in"}>
-            <Button>Get Started</Button>
+           
           </Link>
         )}
       </div>
