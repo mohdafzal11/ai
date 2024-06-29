@@ -9,20 +9,20 @@ const Header = () => {
   console.log(isSignedIn);
 
   return (
-    <div className=" px-5 py-3 flex justify-between shadow-md  bg-[#5169F6]">
+    <div className=" px-5 py-3 flex justify-between shadow-md bg-custom-linear">
       <div><img src="" alt="logo" /></div>
       <div>
         {isSignedIn ? (
           <div className="flex items-center space-x-4">
            
             <Link to={"/dashboard"}>
-              <Button  className="bg-secondary text-black hover:bg-slate-200">Dashboard</Button>
+              <Button  className="">Dashboard</Button>
             </Link>
             <UserButton/>
           </div>
         ) : (
           <Link to={"/auth/sign-in"}>
-            <Button className="bg-secondary text-black hover:bg-slate-200">Get Started</Button>
+            <Button className="">Get Started</Button>
           </Link>
         )}
       </div>
